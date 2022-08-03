@@ -46,7 +46,7 @@ public class Fighter {
 	}
 	
     
-	//burda önce Math.random() la 100 e kadar olan herhangi sayı ataması yaptık(virgüllü de gelebileceği için yüzle çarptık)
+	//burda önce Math.random() la 0ile 1 arasında olan herhangi sayı ataması yaptık(virgüllü geleceği için yüzle çarptık)
 	//sonrasında ikinci yazdığı satırla eğer dövüşçünün bloklaması random atanan bir sayıdan büyükse metodu çalıştırıyor ve 
 	//bloklama sağlıyor  (%50 şans)
 	boolean isDodge() {
