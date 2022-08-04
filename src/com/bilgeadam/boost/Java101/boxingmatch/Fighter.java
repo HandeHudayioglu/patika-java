@@ -1,5 +1,7 @@
 package com.bilgeadam.boost.Java101.boxingmatch;
 
+import java.util.Random;
+
 public class Fighter {
 	
 	String name;
@@ -7,6 +9,7 @@ public class Fighter {
 	int health;
 	int weight;
 	int dodge;
+	
 	
 	
 	public Fighter(String name, int damage, int health, int weight,int dodge) {
@@ -22,6 +25,8 @@ public class Fighter {
 			
 			this.dodge = 0;
 		}
+		
+		
 		
 		
 	}
@@ -55,10 +60,15 @@ public class Fighter {
 		return random<=this.dodge;
 	}
 	
-	boolean isHit() {
+	public Fighter isHit(Fighter f1,Fighter f2) {
 		
-		double random = Math.random()*100;
-		return random<=50;
+		Random rnd = new Random(100);
+		int n = rnd.nextInt();
+		if(n<20) {
+			
+			return f1;
+		}
+		return f2;
 	}
 	
 	

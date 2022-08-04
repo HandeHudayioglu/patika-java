@@ -37,7 +37,7 @@ public class MyList <T>{
 		
 		int index=-1;
 		//bu for döngüsüyle dizinin içinde boş yer var mı onu kontrol ediypruz, indexin ilk değerini -1 aldık, çünkü eğer boş
-		//yer varsa 0 dan başlayarak indexi o sayıyla değitirebilsin diye eğer 0 deseydik i0 olduğunda yine 0 olacaktı anlamayacktık
+		//yer varsa 0 dan başlayarak indexi o sayıyla değitirebilsin diye eğer 0 deseydik i 0 olduğunda yine 0 olacaktı 
 		for( int i=0; i<list.length;i++) {
 			
 			if (list[i]==null) {

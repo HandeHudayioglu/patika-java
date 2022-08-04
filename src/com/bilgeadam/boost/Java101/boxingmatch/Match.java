@@ -25,14 +25,20 @@ public class Match {
 				
 				
 				System.out.println("------NEW ROUND------");
+				int chance = Math.round((float)Math.random());
+				if(chance ==0){
 				this.f2.health = this.f1.hit(this.f2);  //f1 f2 ye vuruyor
 				if(isWin()) {
 					break;
 				}
+				}
+				 if(chance ==1){
 				this.f1.health = this.f2.hit(this.f1);  //f2 f1 e vuruyor
 				if(isWin()) {
 					break;
 				}
+				 }
+				
 				System.out.println(this.f1.name + " Health: "+this.f1.health);
 				System.out.println(this.f2.name + " Health: "+this.f2.health);
 			}
